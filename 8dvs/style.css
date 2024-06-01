@@ -1,0 +1,45 @@
+html {
+  height: 100%;
+}
+
+body {
+  font-family: "Noto Sans KR", sans-serif;
+  font-optical-sizing: auto;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  height: 200px;
+  overflow: hidden; /* 문구가 넘칠 경우를 대비하여 오버플로우를 숨김 */
+}
+
+aside {
+  font-weight: 400;
+  font-size: x-small;
+  background-color: gainsboro;
+  white-space: nowrap;
+  padding: 0;
+}
+
+#infinite-slide {
+  padding: 4px 0px 4px 0;
+  margin: 0;
+  position: relative;
+  white-space: nowrap;
+  animation: infinite-slide 150s linear infinite;
+}
+
+#infinite-slide:hover {
+  animation-play-state: paused;
+}
+
+@keyframes infinite-slide {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: -100%;
+  }
+}
