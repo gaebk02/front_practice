@@ -15,7 +15,7 @@ header {
   overflow: hidden; /* 문구가 넘칠 경우를 대비하여 오버플로우를 숨김 */
 }
 
-aside {
+.infinite-slider {
   font-weight: 400;
   font-size: x-small;
   background-color: gainsboro;
@@ -23,15 +23,15 @@ aside {
   padding: 0;
 }
 
-#infinite-slide {
+.infinite-slider-content {
   padding: 4px 0px 4px 0;
   margin: 0;
   position: relative;
   white-space: nowrap;
-  animation: infinite-slide 150s linear infinite;
+  animation: infinite-slide 120s linear infinite;
 }
 
-#infinite-slide:hover {
+.infinite-slider-content:hover {
   animation-play-state: paused;
 }
 
